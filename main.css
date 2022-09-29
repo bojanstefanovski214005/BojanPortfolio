@@ -4,8 +4,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-     background-color: #3AAFA9;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -61,6 +60,42 @@ html, body {
     color: #17242A;
     font-family: 'Sora', sans-serif;
     font-weight: 700;
+    position: relative;
+    width: 290px;
+    border-right: 2px solid #17242A;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animwr{
+    animation: animate 4s steps(24) 0.2s infinite normal both,
+    blinkCursor 800ms steps(14) infinite normal;
+}
+
+
+@keyframes animate{
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 290px;
+    }
+    60%{
+        width: 290px;
+    }
+    100%{
+        width: 0;
+    }
+
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #17242A;
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .headerimg{
@@ -236,6 +271,9 @@ html, body {
 
 #fifth{
     background-color: #17242A;
+    background-image: url(images/backgfifth.png);
+    background-repeat: repeat;
+    background-size: 8%;
 }
 
 .titlefifth{
@@ -262,6 +300,9 @@ html, body {
 
 #getin{
     background-color: #17242A;
+    background-image: url(images/backget.png);
+    background-repeat: repeat-x;
+    background-size: 8%;
 }
 
 .getint{
@@ -344,5 +385,13 @@ ul{
         display: inline-block;
         padding-right: 7px;
         padding-left: 7px;
+    }
+
+    #getin{
+        background-size: 28%;
+    }
+
+    #fifth{
+        background-size: 28%;
     }
 }
