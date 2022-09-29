@@ -7,8 +7,20 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #3AAFA9 !important;
+}
+
 .navbar{
     background-color: #3AAFA9 !important;
+}
+
+.active{
+    box-shadow: 2px 9px 43px -12px rgba(0,0,0,0.17);
+    -webkit-box-shadow: 2px 9px 43px -12px rgba(0,0,0,0.17);
+    -moz-box-shadow: 2px 9px 43px -12px rgba(0,0,0,0.17);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .navbar-dark.navbar-dark .navbar-nav .nav-link{
@@ -146,9 +158,12 @@ html, body {
     color: #17242A;
 }
 
+
+
 .card-deck .card{
     border-radius: 7px !important;
 }
+
 
 
 .school{
@@ -179,15 +194,15 @@ html, body {
 }
 
 .swiper-button-next{
-    color: #DEF2F1;
+    color: #2b7a78;
 }
 
 .swiper-button-prev{
-    color: #DEF2F1;
+    color: #2b7a78;
 }
 
 .swiper-pagination-bullet-active{
-    background-color: #DEF2F1 !important;
+    background-color: #2b7a78 !important;
 }
 
 .swiper-pagination-bullet{
@@ -209,7 +224,8 @@ html, body {
 }
 
 #skills{
-    height: 600px;
+    height: 700px;
+    background-color: white;
 }
 
 #skills h2{
@@ -346,6 +362,21 @@ ul{
     color: #2b7a78;
 }
 
+.cpr{
+    color: #3AAFA9;
+    font-family: 'Sora';
+}
+
+.cpr > a {
+    color: #3AAFA9;
+    text-decoration: none;
+}
+
+.cpr > a:hover {
+    text-decoration: none;
+}
+
+
 @keyframes animbar {
     from {width: 0%;}
     to {}
@@ -381,7 +412,7 @@ ul{
         text-align: center;
     }
 
-    li{
+    .ftr li{
         display: inline-block;
         padding-right: 7px;
         padding-left: 7px;
