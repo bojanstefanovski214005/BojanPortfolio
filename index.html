@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+
+   <div id="preloader"></div>
     
         <nav class="navbar navcli navbar-expand-lg navbar-dark pt-3">
             <div class="container">
@@ -358,6 +360,20 @@ I have experience in developing, redesigning, and moderating high-traffic WordPr
 }
 toggleItem(document.querySelectorAll('.navbar'));
   </script> -->
+
+  <script>
+
+    // var loader = document.getElementById("preloader");
+
+    // window.addEventListener("load", function(){
+    //     loader.style.display = "none" ;
+    // })
+    
+    setTimeout(function() {
+  $('#preloader').addClass('hidden');
+}, 1800);
+
+  </script>
 
 
     <!-- Initialize Swiper -->

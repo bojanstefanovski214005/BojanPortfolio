@@ -425,4 +425,29 @@ ul{
     #fifth{
         background-size: 28%;
     }
+
+    #preloader{
+        background-size: 60% !important;
+    }
+}
+
+#preloader {
+    background-color: #17242A;
+    background-image: url(images/prepre.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+    z-index: 100;
+    transition: 0.7s;
+    visibility: visible;
+}
+
+#preloader.hidden{
+    height: 0vh;
+    opacity: 1;
+    visibility: hidden;
 }
